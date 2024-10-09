@@ -5,7 +5,7 @@ def main():
     html = html.strip()
     site = (extract(html))
     if site != None:
-        site = site.replace('youtube.','youtu.')
+        site = site.replace('www.youtube.com','youtu.be')
     print(site)
 
 
@@ -22,13 +22,6 @@ def extract(html):
         return site[0]
     else:
        return None
-
-
-
-
-
-
-
 
 
 if __name__ == '__main__':
